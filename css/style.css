@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 90%;
+  min-width: 768px;
+  background-color: antiquewhite;
+  margin: 0 auto;
+}
+
+.container {
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+form {
+  width: 30%;
+  margin: auto;
+  padding: 10px;
+}
+
+.color-name,
+.color-type,
+.color-code,
+.color-save_btn {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+input,
+select,
+button {
+  padding: 5px;
+  outline: none;
+}
+
+.result-color {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 3%;
+  margin-left: 3%;
+}
+
+.new-palette {
+  width: 30%;
+  padding: 30px;
+  margin: 30px 0;
+}
+
+.innerblock {
+  padding: 10px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.errorDiv {
+  width: 90%;
+  margin: 10px auto;
+  background-color: rgb(240, 18, 11);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.3em;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Palette</title>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Create new color</h2>
+
+    <form action="#" name="palette" method="GET">
+    <!-- Если на сервер ничего не оптравляется, то можно строить пользовательские интерфейсы без объединения полей формы в элемент form  -->
+
+      <div class="color-name">
+        <label for="color">Color</label>
+
+        <input type="text" name="color" id="color" required>
+        <!-- Если точно так же на сервер ничего не оптравляется, то можно не использовать атрибут name у полей формы -->
+
+      </div>
+      <div class="color-type">
+        <label for="type">Type</label>
+        <select name="type" id="type">
+          <option value="rgb">RGB</option>
+          <option value="rgba">RGBA</option>
+          <option value="hex">HEX</option>
+        </select>
+      </div>
+      <div class="color-code">
+        <label for="color">Code</label>
+        <input type="text" name="code" id="code" required>
+      </div>
+
+      <div class="color-save_btn">
+        <button id="color_btn">Save</button>
+      </div>
+
+    </form>
+  </div>
+
+  <h2>All colors</h2>
+
+  <div class="container">
+    <div class="result-color">
+
+    </div>
+  </div>
+
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
